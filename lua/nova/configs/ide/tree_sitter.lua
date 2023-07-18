@@ -1,6 +1,6 @@
 local status_ok ,tree_sitter = pcall(require, 'nvim-treesitter.configs')
 if not status_ok then
-	print 'Error Tree sitter is not installed!'
+	print '[Error] Tree sitter is not installed!'
 	return
 end
 
