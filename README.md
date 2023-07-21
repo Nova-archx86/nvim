@@ -13,6 +13,6 @@ Using git:
 
 After coppying the configs and entering in neovim:
 	
-	:PackerInstall
+	:PackerSync
 
 
