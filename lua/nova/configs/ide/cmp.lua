@@ -91,10 +91,6 @@ cmp.setup({
 		capabilities = capabilities
 	}
 
-	lspconfig['gopls'].setup {
-		capabilities = capabilities
-	}
-
 	lspconfig['texlab'].setup {
 		capabilities = capabilities
 	}

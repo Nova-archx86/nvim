@@ -19,4 +19,4 @@ keymap("n", "<leader>p", ":BufferPrevious<cr>", opts)
 keymap("n", "<leader>q", ":BufferClose<cr>", opts)
 
 -- Open terminal buffer
-keymap("n", "<leader>t", ":terminal<cr>", opts)
+keymap("n", "<leader>t", ":ToggleTerm<cr>", opts)

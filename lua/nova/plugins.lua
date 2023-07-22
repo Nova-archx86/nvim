@@ -25,4 +25,7 @@ packer.startup(function()
 	use 'L3MON4D3/LuaSnip'
  	use 'saadparwaiz1/cmp_luasnip'
 	use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+  require("toggleterm").setup()
+	end}
 end)
