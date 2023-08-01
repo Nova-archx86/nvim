@@ -28,5 +28,5 @@ packer.startup(function()
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
   require("toggleterm").setup()
 	end}
-	use 'olivercederborg/poimandres.nvim'
+	use 'tanvirtin/monokai.nvim'
 end)

@@ -1,19 +1,19 @@
-local poi_status_ok, poi = pcall(require, 'poimandres')
-if not poi_status_ok then
-	print '[Warning] poimandres is not installed!'
-end
-
 local tokyo_status_ok, tokyo = pcall(require, 'tokyonight')
 if not tokyo_status_ok then
 	print '[Warning] tokyo night is not installed!'
 end
 
+-- collection of just random themes that i've installed...
+-- some are legacy vim and dont call to setup();
+
+
+-- new themes
 tokyo.setup({
   -- your configuration comes here
   -- or leave it empty to use the default settings
-  style = "night", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-  light_style = "day", -- The theme is used when the background is set to light
-  transparent = false, -- Enable this to disable setting the background color
+  style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
+  light_style = "moon", -- The theme is used when the background is set to light
+  transparent = true, -- Enable this to disable setting the background color
   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
   styles = {
     -- Style to be applied to different syntax groups
@@ -34,13 +34,5 @@ tokyo.setup({
 
 })
 
-poi.setup {
-	bold_vert_split = false, -- use bold vertical separators
-  dim_nc_background = true, -- dim 'non-current' window backgrounds
-  disable_background = true, -- disable background
-  disable_float_background = true, -- disable background for floats
-  disable_italics = false, -- disable italics
-}
-
-vim.cmd('colorscheme poimandres')
+vim.cmd('colorscheme monokai_soda')
 
