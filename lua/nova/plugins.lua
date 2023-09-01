@@ -5,14 +5,7 @@ if not status_ok then
 end
 
 packer.startup(function()
-	use {
-  'nvim-tree/nvim-tree.lua',
-  requires = {
-    'nvim-tree/nvim-web-devicons', -- optional, for file icons
-  },
-}
-	use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
-	use 'folke/tokyonight.nvim'
+	use { "ellisonleao/gruvbox.nvim" }
 	use 'williamboman/mason.nvim'
 	use 'nvim-treesitter/nvim-treesitter'
 	use 'neovim/nvim-lspconfig'
@@ -24,9 +17,9 @@ packer.startup(function()
 	use 'hrsh7th/cmp-cmdline'
 	use 'L3MON4D3/LuaSnip'
  	use 'saadparwaiz1/cmp_luasnip'
-	use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
   require("toggleterm").setup()
 	end}
 	use 'tanvirtin/monokai.nvim'
+	use({ 'toppair/peek.nvim', run = 'deno task --quiet build:fast' })
 end)

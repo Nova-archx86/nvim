@@ -1,11 +1,8 @@
 -- General neovim customizations
-require 'nova.configs.tree'
-require 'nova.configs.barbar'
-require 'nova.configs.bufferline'
-
+require 'nova.configs.colors'
 -- IDE related configs 
 require 'nova.configs.ide.cmp'
 require 'nova.configs.ide.mason'
 require 'nova.configs.ide.tree_sitter'
 require 'nova.configs.ide.toggleterm'
-require 'nova.configs.colors'
+require 'nova.configs.ide.peek'

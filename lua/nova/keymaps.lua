@@ -8,15 +8,5 @@ vim.g.maplocalleader = " "
 -- remap space key to leader
 keymap("", "<space>", "<Nop>", opts)
 
--- Opens file explorer
-keymap("n", "<leader>e", ":NvimTreeOpen<cr>", opts)
-
--- Switch between buffers
-keymap("n", "<leader>n", ":BufferNext<cr>", opts)
-keymap("n", "<leader>p", ":BufferPrevious<cr>", opts)
-
--- close current buffer
-keymap("n", "<leader>q", ":BufferClose<cr>", opts)
-
 -- Open terminal buffer
 keymap("n", "<leader>t", ":ToggleTerm<cr>", opts)

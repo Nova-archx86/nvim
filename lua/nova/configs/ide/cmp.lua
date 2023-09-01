@@ -99,3 +99,7 @@ cmp.setup({
 		capabilities = capabilities
 	}
 
+	lspconfig['grammarly'].setup {
+		capabilities = capabilities
+	}
+
