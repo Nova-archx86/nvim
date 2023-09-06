@@ -5,7 +5,7 @@ if not status_ok then
 end
 
 packer.startup(function()
-	use { "ellisonleao/gruvbox.nvim" }
+	use "EdenEast/nightfox.nvim"	
 	use 'williamboman/mason.nvim'
 	use 'nvim-treesitter/nvim-treesitter'
 	use 'neovim/nvim-lspconfig'
