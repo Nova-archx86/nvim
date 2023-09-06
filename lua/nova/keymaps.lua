@@ -12,6 +12,6 @@ keymap("", "<space>", "<Nop>", opts)
 keymap("n", "<leader>t", ":ToggleTerm<cr>", opts)
 
 -- New tab 
-keymap("n", "<leader>n", ":tabnnew<cr>", opts)
+keymap("n", "<leader>n", ":tabnew<cr>", opts)
 keymap("n", "<leader>,", ":tabp<cr>", opts)
 keymap("n", "<leader>.", ":tabn<cr>", opts)
