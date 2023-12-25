@@ -1,6 +1,9 @@
-local night_fox_status_ok, night_fox = pcall(require, 'nightfox')
-if not night_fox_status_ok then
-	print '[Warn] nightfox is not installed'
+function setColorScheme(color)
+	color = color or "gruvbox"
+	vim.cmd.colorscheme(color)
+	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
 end
 
-vim.cmd("colorscheme carbonfox")
+setColorScheme("gruvbox")

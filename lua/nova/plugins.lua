@@ -17,9 +17,12 @@ packer.startup(function()
 	use 'hrsh7th/cmp-cmdline'
 	use 'L3MON4D3/LuaSnip'
  	use 'saadparwaiz1/cmp_luasnip'
+	use 'patstockwell/vim-monokai-tasty'
+	use 'bluz71/vim-nightfly-colors'
 	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
   require("toggleterm").setup()
 	end}
 	use 'tanvirtin/monokai.nvim'
+	use 'ellisonleao/gruvbox.nvim'
 	use({ 'toppair/peek.nvim', run = 'deno task --quiet build:fast' })
 end)
